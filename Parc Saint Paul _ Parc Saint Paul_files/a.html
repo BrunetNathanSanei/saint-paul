@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html id="convious-html-element" translate="no" dir="ltr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+      #convious-frame-mount {
+        overflow: hidden;
+      }
+      #convious-frame-mount * {
+        box-sizing: border-box;
+      }
+      body::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 0;
+        height: 0;
+      }
+    </style>
+    <style id="injected-css-0">
+:root {
+    /* Basic properties */
+    --name: "Parc Saint Paul";
+    --logo: "https://s3-eu-west-1.amazonaws.com/images.convious.lt/product_files/8daa2bf9-35e2-4e08-a452-d31ea8f8e39f.png";
+    --typeKitId: "null";
+    --style: "flat";
+    --isDesktop: true;
+    --isInline: false;
+    --aspectRatio: 1;
+    --isOldIE: false;
+    --isRTL: false;
+
+    /* Margins */
+    --margins-big: 26px;
+    --margins-normal: 18px;
+    --margins-small: 9px;
+    --margins-verySmall: 5px;
+
+    /* Typography bases */
+    --typography-bases-primaryFont-family: Open Sans;
+    --typography-bases-primaryFont-size: 20px;
+    --typography-bases-secondaryFont-family: Roboto;
+    --typography-bases-secondaryFont-size: inherit;
+
+    /* Typography definitions */
+    --typography-h1-family: inherit;
+    --typography-h1-size: 28px;
+    --typography-h1-weight: bold;
+    --typography-h1-lineHeight: 28px;
+    --typography-h1-color: greys.dark;
+
+    --typography-h2-family: inherit;
+    --typography-h2-size: 19px;
+    --typography-h2-weight: bold;
+    --typography-h2-lineHeight: 22px;
+    --typography-h2-color: greys.dark;
+
+    --typography-h3-family: inherit;
+    --typography-h3-size: 18px;
+    --typography-h3-weight: inherit;
+    --typography-h3-lineHeight: 22px;
+    --typography-h3-color: greys.normal;
+
+    --typography-body-family: inherit;
+    --typography-body-size: 18px;
+    --typography-body-weight: inherit;
+    --typography-body-lineHeight: inherit;
+    --typography-body-color: greys.dark;
+
+    --typography-bodySmall-family: inherit;
+    --typography-bodySmall-size: 15px;
+    --typography-bodySmall-weight: inherit;
+    --typography-bodySmall-lineHeight: 17px;
+    --typography-bodySmall-color: greys.normal;
+
+    /* Action buttons */
+    --actionButtons-borderRadius: 0;
+    --actionButtons-hoverBoxShadow: 0 5px 10px 2px rgba(0, 0, 0, 0.35);;
+
+    /* Colors */
+    --colors-brand: #830f07;
+    --colors-primary: #333333;
+    --colors-secondary: #e30613;
+    --colors-background: #e5ebed;
+    --colors-focusOutline: #000000;
+    --colors-black: #000000;
+    --colors-white: #FFFFFF;
+
+    /* Greys */
+    --colors-greys-dark: #26323a;
+    --colors-greys-normal: #808889;
+    --colors-greys-light: #d1d8df;
+
+    /* Trigger colors */
+    --colors-trigger-button-bg: #FF3BEE;
+    --colors-trigger-fab-bg: #00DD77;
+    --colors-trigger-fab-fg: #FFFFFF;
+    --colors-trigger-flag-bg: #FF3BEE;
+
+    /* Status colors */
+    --colors-status-success: #33CA4E;
+    --colors-status-warning: #FFAC42;
+    --colors-status-fail: #FF5959;
+
+    /* Date picker colors */
+    --colors-datePicker-selected: #4A90E2;
+
+    /* Step bar colors */
+    --colors-stepBar-grey: #A4B0B2;
+    --colors-stepBar-text: #3C4953;
+
+    /* Date buttons */
+    --dateButtons-textAlign: left;
+    --dateButtons-borderRadius: inherit;
+
+    /* Simple button */
+    --simpleButton-color: #26323a;
+    --simpleButton-backgroundColor: #FFFFFF;
+    --simpleButton-selectedColor: #FFFFFF;
+    --simpleButton-selectedBackgroundColor: #139d24;
+    --simpleButton-hoverColor: #FFFFFF;
+    --simpleButton-hoverBackgroundColor: #8de3c0;
+
+    /* Date picker */
+    --datePicker-borderRadius: 0;
+    --datePicker-maxWidth: 475px;
+    --datePicker-borderShadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+    --datePicker-border: none;
+
+    /* Card */
+    --card-backgroundColor: white;
+    --card-backgroundColorActive: #830f07;
+    --card-highlightBackgroundColor: white;
+    --card-borderRadius: 0;
+    --card-dropShadow: true;
+    --card-color: greys.dark;
+    --card-hoverBorderShadow: 0 5px 10px 2px rgba(0, 0, 0, 0.35);;
+
+    /* Box */
+    --box-borderRadius: 0;
+
+    /* Input */
+    --input-borderRadius: 0;
+    --input-boxShadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    --input-boxShadowOnFocus: 0 1px 10px 0 rgba(0, 0, 0, 0.4);
+    --input-borderRadiusAPF: 6px;
+
+    /* Checkbox */
+    --checkBox-boxShadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+    --checkBox-borderRadius: 6px;
+    --checkBox-border: none;
+
+    /* Divider */
+    --divider-borderTop: 1px solid #ccc;
+    --divider-height: 2px;
+
+    /* Header */
+    --header-logoPadding: 5px 0;
+    --header-pimpleLogo: false;
+
+    /* Starburst */
+    --starburst-shadeAmount: 0.3;
+
+    /* Trigger */
+    --trigger-borderRadius: 0;
+    --trigger-opacity-mobile: 1;
+    --trigger-opacity-desktop: 1;
+
+    /* RTP Calendar */
+    --rtpCalendar-name: "custom";
+    --rtpCalendar-na-color: #808889;
+    --rtpCalendar-first-band: #00ac1e;
+    --rtpCalendar-second-band: #0c71c3;
+    --rtpCalendar-third-band: #ec018c;
+
+    /* Overlay */
+    --overlay-color: #26323a;
+    --overlay-opacity: 80;
+
+    /* Adyen Payment Screen */
+    --adyenPaymentScreen-paymentRefusedWrapper-backgroundColor: none;
+    --adyenPaymentScreen-paymentRefusedWrapper-padding: 10px;
+
+    /* Step Bar */
+    --stepBar-backgroundColor: #139d24;
+
+    /* Modal Window sizes */
+    --modalWindow-cornerRadius: 10px;
+    --modalWindow-titleSize-small: 20px;
+    --modalWindow-titleSize-medium: 25px;
+    --modalWindow-titleSize-large: 30px;
+    --modalWindow-paragraphSize-small: 13px;
+    --modalWindow-paragraphSize-medium: 16px;
+    --modalWindow-paragraphSize-large: 19px;
+    --modalWindow-xButtonSize-small: 15px;
+    --modalWindow-xButtonSize-medium: 20px;
+    --modalWindow-xButtonSize-large: 25px;
+
+    /* Modal Window proceed button sizes */
+    --modalWindow-proceedButtonSize-small-fontSize: 14px;
+    --modalWindow-proceedButtonSize-small-padding: 6px 5px;
+    --modalWindow-proceedButtonSize-medium-fontSize: 18px;
+    --modalWindow-proceedButtonSize-medium-padding: 13px 5px;
+    --modalWindow-proceedButtonSize-large-fontSize: 23px;
+    --modalWindow-proceedButtonSize-large-padding: 20px 5px;
+
+    /* Modal Window dismiss button sizes */
+    --modalWindow-dismissButtonSize-small: 13px;
+    --modalWindow-dismissButtonSize-medium: 16px;
+    --modalWindow-dismissButtonSize-large: 19px;
+
+    /* Trigger Button font sizes */
+    --triggerButton-tbFontSize-mobile-small: 10px;
+    --triggerButton-tbFontSize-mobile-medium: 15px;
+    --triggerButton-tbFontSize-mobile-large: 20px;
+    --triggerButton-tbFontSize-desktop-small: 15px;
+    --triggerButton-tbFontSize-desktop-medium: 20px;
+    --triggerButton-tbFontSize-desktop-large: 25px;
+
+    /* Trigger Button X button sizes */
+    --triggerButton-xButtonSize-small-fontSize: 14px;
+    --triggerButton-xButtonSize-small-bubbleSize: 20px;
+    --triggerButton-xButtonSize-medium-fontSize: 16px;
+    --triggerButton-xButtonSize-medium-bubbleSize: 25px;
+    --triggerButton-xButtonSize-large-fontSize: 18px;
+    --triggerButton-xButtonSize-large-bubbleSize: 30px;
+
+    /* RTL support helpers */
+    --text-direction: ltr;
+    --text-align: left;
+    --text-align-opposite: right;
+}
+</style>
+    <style id="injected-css-1">:root {
+    --colors-richBlack: #0d151e;
+}
+
+*:focus-visible {
+    outline: solid 2px var(--colors-focusOutline);
+}
+</style>
+    <style id="injected-css-2">#trigger-button {
+    &:focus-visible {
+        margin: -2px;
+        border: solid 2px var(--colors-focusOutline);
+        border-top-right-radius: 6px;
+    }
+}
+</style>
+    <style id="injected-css-3">.payment-method-card {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #b4bfc9;
+    background: #f5f7fa;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+
+    .card-info-container {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .payment-method-logo-container {
+        width: 40px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: 1px solid #b4bfc9;
+        padding: 2px 4px;
+        background-color: #fff;
+        font-weight: 400;
+
+        & > img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .button-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+
+        button {
+            display: flex;
+            padding: 4px 16px;
+            color: var(--colors-brand);
+            font-weight: 500;
+            cursor: pointer;
+
+            svg {
+                height: 16px;
+                width: 16px;
+                margin-left: 0.25rem;
+                transition: transform 150ms ease-in-out;
+            }
+
+            &.disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+                color: var(--colors-greys-dark);
+            }
+        }
+
+        &.expanded button svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    .update-options {
+        position: absolute;
+        top: 1.5rem;
+        right: 0.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-wrap: nowrap;
+        background-color: var(--colors-white);
+        border-radius: 0.5rem;
+        border: 1px solid #b4bfc9;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        z-index: 10;
+
+        .update-option {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            line-height: 150%;
+            transition: 100ms;
+            border-bottom: 1px solid #b4bfc9;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                transition: none;
+                background-color: #edeff3;
+            }
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+</style>
+    <style id="injected-css-4">#container-after_payment_form #conviousWidgetContent {
+    padding-top: 1rem;
+    font-family: var(--typography-bases-secondaryFont-family);
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: var(--colors-richBlack);
+
+    input:focus {
+        margin: -1px;
+    }
+
+    form {
+        padding-bottom: 16px;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    .stored-ticket-holder-selector {
+        .stored-ticket-holder-selector-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            margin-top: 8px;
+        }
+
+        .stored-ticket-holder-selector-item {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 8px;
+            align-items: center;
+            box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            margin: 1px;
+            border: 1px solid #b4bfc9;
+            font-size: 0.875rem !important;
+            line-height: 150% !important;
+
+            &.selected {
+                border: 2px solid var(--colors-brand);
+                margin: 0;
+            }
+
+            .barcode {
+                color: #3d4854;
+            }
+        }
+    }
+
+    .after_payment_form_review {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .after_payment_form_review_header {
+            color: #3d4854;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .after_payment_form_review_buyer,
+        .after_payment_form_review_ticket_holders {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .section_review {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding: 8px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+
+                .section_review_title {
+                    font-size: 1.125rem;
+                    line-height: 150%;
+                }
+
+                &.missing_fields {
+                    border: 2px solid var(--warning-color);
+                }
+
+                .section_review_items {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .section_review_item {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+
+                        & span {
+                            flex: 1;
+
+                            &:first-child {
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+                }
+
+                .section_review_edit_button {
+                    padding: 8px 32px;
+                    margin: 0;
+                    font-size: 0.875rem;
+                    line-height: 150%;
+                    border-radius: 8px;
+                    border: 1px solid #b4bfc9;
+
+                    &:hover {
+                        box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}
+</style>
+  <style data-styled="active" data-styled-version="6.1.6"></style></head>
+  <body style="margin: 0; z-index: 420420420420;">
+    <div id="convious-frame-mount"><div class="sc-dkrGBB bBsbgA"></div><div class="fontImporterhoc__FontLoadTrigger-sc-197lcgm-0 guURVg"></div><div class="customFontWrapper__FontWrapper-sc-104zstw-0 hcGQVj"><button id="trigger-button" aria-label="Ouvrir la boutique en ligne" data-testid="widget-open-checkout-button" position="bottom-left" class="conviousButton__ConviousButton-sc-9jioot-0 ddzfXn bubble"><span data-animation-injector="true" class="conviousKeyframes__KeyframeWrapper-sc-1uiaial-0 kvsZTV"></span><span data-animation-injector="true" class="conviousKeyframes__KeyframeWrapper-sc-1uiaial-0 eScfmd"></span><span data-animation-injector="true" class="conviousKeyframes__KeyframeWrapper-sc-1uiaial-0 czaWGJ"></span><div class="ButtonImage__ButtonImg-sc-103ycm3-1 ikrIiq pulse nudge" bgcolor="#0c71c3" position="bottom-left" pulseanimation="convious-animation-pBNhY"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M323.9 19.81l-55.2 55.15L285 91.24 272.2 104 256 87.73 19.81 323.9l45.57 45.6c28.5-14.6 56.22-11.7 72.52 4.6 16.3 16.3 19.2 44 4.6 72.5l45.6 45.6 236.1-236.1-16.2-16.3 12.8-12.8 16.3 16.2 55.1-55.1-45.6-45.6c-28.5 14.6-56.2 11.7-72.5-4.6-16.3-16.3-19.2-44.02-4.6-72.52zm-16.2 93.99l33.9 34-12.8 12.8-33.9-34zM256 130.2L381.8 256 222.1 415.8 96.16 289.9 249.6 136.5zm0 25.4L121.6 289.9l100.5 100.5L356.4 256zm108.2 14.8l34 33.9-12.8 12.8-34-33.9z"></path></svg></div><span data-animation-injector="true" class="conviousKeyframes__KeyframeWrapper-sc-1uiaial-0 boeAB"></span><div position="bottom-left" custombgcolor="#273a6d" class="Bubble__BubblePrimitive-sc-1m0o2ga-0 dgXZZm"><div position="bottom-left" customfontsize="20px" customfontcolor="#ffffff" class="Bubble__BubbleText-sc-1m0o2ga-1 gQGByk"><span id="default_trigger_buttons.title"><div>Achetez vos billets ici !&nbsp;</div></span></div></div></button></div></div>
+    
+  
+
+</body></html>

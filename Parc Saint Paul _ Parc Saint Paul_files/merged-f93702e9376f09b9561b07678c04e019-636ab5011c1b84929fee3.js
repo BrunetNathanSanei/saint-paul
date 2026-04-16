@@ -1,4 +1,3 @@
-
 /*!
  * parallax.js v1.5.0 (http://pixelcog.github.io/parallax.js/)
  * @copyright 2016 PixelCog, Inc.
@@ -1452,6 +1451,7 @@ function onYouTubeIframeAPIReady() {
 onYouTubeIframeAPIReady();
 
 $(document).ready(function () {
+  /*
   $(".navbar .nav-item.dropdown").each(function (i) {
     parentItem = $(this).find(".dropdown-toggle");
     parentNonLinked = parentItem.clone();
@@ -1475,6 +1475,8 @@ $(document).ready(function () {
       newDropdownLink.text(parentText);
       dropdownItemTemplate.before(newDropdownItem);
     }
+  });
+*/
 
     /**
      *
@@ -1490,7 +1492,6 @@ $(document).ready(function () {
      * End of iOS fix
      */
   });
-});
 
 // Custom Codes
 $(document).ready(function () {
@@ -3205,4 +3206,3 @@ function getCookie(name) {
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
-
